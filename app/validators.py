@@ -59,5 +59,5 @@ def is_valid_plate(value: str) -> bool:
 
 
 def is_rejection_code(value: str) -> bool:
-    _has_valid_chars = value.isdigit() or value in ("!", "*")
+    _has_valid_chars = value.isdigit() or value in ("!", "*", "&")
     return len(value) <= 2 and _has_valid_chars
