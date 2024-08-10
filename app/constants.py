@@ -137,4 +137,12 @@ PAYMENT_CANCEL_SUB_ERRORS = {
         "description": "Bico reinserido sem fluxo de combustível",
         "action": "Ação32",
     },
+    "*": {
+        "description": "*",
+        "action": "Ação33",
+    },
+    "!": {
+        "description": "!",
+        "action": "Ação32",
+    },
 }

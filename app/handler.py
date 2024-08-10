@@ -10,7 +10,7 @@ def handle_file(log_path: str, result_path: str = RESULT_PATH) -> bool:
             content = log_file.read().split("\n")
             data = get_parsed_data(content)
 
-            with open(result_path, "a") as result_file:
+            with open(result_path, "w") as result_file:
                 for idx, entry in enumerate(data):
                     line_number = f"[L-{idx+1}]"
                     line = " ".join(item for item in entry.values())

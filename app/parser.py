@@ -32,6 +32,11 @@ def _add_canceled_error_details(row_data: dict) -> dict:
         row_data["action"] = PAYMENT_CANCEL_SUB_ERRORS[row_data["rejection_code"]][
             "action"
         ]
+    
+    rejection_code = row_data["rejection_code"]
+    if rejection_code and rejection_code not in PAYMENT_CANCEL_SUB_ERRORS:
+        row_data["description"] = "Codigo nao encontrado"
+
     return row_data
 
 
