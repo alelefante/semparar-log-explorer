@@ -86,3 +86,5 @@ def get_parsed_data(content: list) -> list:
         result.append(detailed_parsed_data)
 
     return result
+
+# teste
